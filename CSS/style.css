@@ -23,7 +23,7 @@ body{
     gap:30px;
 }
 .img1{
-    background-image: url('assets/images/illustration-sign-up-mobile.svg');
+    background-image: url('../assets/images/illustration-sign-up-mobile.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
