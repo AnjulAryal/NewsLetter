@@ -95,7 +95,7 @@ button:hover{
     .img1{
         grid-column:2/3;
         grid-row: 1/3;
-        background-image: url('/assets/images/illustration-sign-up-desktop.svg');
+        background-image: url('../assets/images/illustration-sign-up-desktop.svg');
         border-radius: 10px;
     }
 
