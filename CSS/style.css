@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --Red: hsl(4, 100%, 67%);
+    --Blue800: hsl(234, 29%, 20%);
+    --Blue700: hsl(235, 18%, 26%);
+    --Grey: hsl(0, 0%,58%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    color: var(--Blue800);
+    font-family: 'Roboto';
+    font-family: 16px;
+    margin: 0px;
+}
+.main-container{
+    display: grid;
+    gap:30px;
+}
+.img1{
+    background-image: url('/assets/images/illustration-sign-up-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 0px 10px 10px;
+    min-height: 280px;
+}
+.content-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+    padding: 30px;
+}
+.list-items{
+    display: flex;
+    column-gap: 15px;
+}
+.icons{
+    padding-bottom: 35px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    min-height: 50px;
+    border-radius: 10px;
+    padding-left: 30px;
+    margin: 10px 0px 10px 0px;
+    border: solid var(--Grey) 0.8px;
+}
+button{
+    min-height: 50px;
+    background-color: var(--Blue800);
+    color: var(--White);
+    border-radius: 10px;
+}
+button:hover{
+    background-color: var(--Red);
+    border: none;
+    box-shadow: 2px 2px 20px var(--Red);
+}
+
+.emailmanage{
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width:600px) {
+    body{
+        height: 100vh;
+        background-color: var(--Blue800);
+        color: var(--Blue700);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-container{
+        grid-template-columns: 1fr 0.7fr;
+        background-color: var(--White);
+        border-radius: 30px 20px 20px 30px;
+        padding: 25px;
+    }
+    .content-area{
+        padding-top: 70px;
+    }
+    .icons{
+        padding-bottom: 20px;
+    }
+    .img1{
+        grid-column:2/3;
+        grid-row: 1/3;
+        background-image: url('/assets/images/illustration-sign-up-desktop.svg');
+        border-radius: 10px;
+    }
+
+}

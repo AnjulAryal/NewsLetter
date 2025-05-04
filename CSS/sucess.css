@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Red: hsl(4, 100%, 67%);
+    --Blue800: hsl(234, 29%, 20%);
+    --Blue700: hsl(235, 18%, 26%);
+    --Grey: hsl(0, 0%,58%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-conatiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 25px;
+}
+#dismiss_message{
+    background-color: var(--Blue800);
+    color:var(--White);
+    border-radius: 10px;
+}
+.email{
+    font-weight: bold;
+}
+@media (min-width:600px) {
+    body{
+        background-color: var(--Blue800);
+    }
+    .main-conatiner{
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        background-color: var(--White);
+        justify-content: center;
+    }
+    .dismiss-message{
+        border: none;
+        cursor: pointer;
+        margin: 50px 0px 50px 0px;
+    }
+    #dismiss_message:hover{
+        box-shadow: 2px 2px 30px var(--Red);
+        background-color: var(--Red);
+        border: var(--Red) solid ;
+    }
+    
+}
